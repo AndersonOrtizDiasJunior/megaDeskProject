@@ -1,0 +1,11 @@
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\bin\Debug\MegaDesk-Dias.exe.config
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\bin\Debug\MegaDesk-Dias.exe
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\bin\Debug\MegaDesk-Dias.pdb
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.csproj.AssemblyReference.cache
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk_Dias.menu.resources
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk_Dias.Properties.Resources.resources
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.csproj.GenerateResource.cache
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.csproj.CoreCompileInputs.cache
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.exe
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.pdb
