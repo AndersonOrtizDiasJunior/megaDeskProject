@@ -60,7 +60,7 @@
             this.searchBtn.Location = new System.Drawing.Point(12, 136);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(122, 36);
-            this.searchBtn.TabIndex = 5;
+            this.searchBtn.TabIndex = 3;
             this.searchBtn.Text = "Search Quotes";
             this.searchBtn.UseVisualStyleBackColor = true;
             // 
@@ -69,16 +69,17 @@
             this.quoteBtn.Location = new System.Drawing.Point(12, 26);
             this.quoteBtn.Name = "quoteBtn";
             this.quoteBtn.Size = new System.Drawing.Size(122, 36);
-            this.quoteBtn.TabIndex = 6;
+            this.quoteBtn.TabIndex = 1;
             this.quoteBtn.Text = "Add New Quote";
             this.quoteBtn.UseVisualStyleBackColor = true;
+            this.quoteBtn.Click += new System.EventHandler(this.quoteBtn_Click);
             // 
             // viewBtn
             // 
             this.viewBtn.Location = new System.Drawing.Point(12, 81);
             this.viewBtn.Name = "viewBtn";
             this.viewBtn.Size = new System.Drawing.Size(122, 36);
-            this.viewBtn.TabIndex = 7;
+            this.viewBtn.TabIndex = 2;
             this.viewBtn.Text = "View Quotes";
             this.viewBtn.UseVisualStyleBackColor = true;
             // 

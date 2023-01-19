@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MegaDesk_Dias.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace MegaDesk_Dias
         private void menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void quoteBtn_Click(object sender, EventArgs e)
+        {
+            var quoteForm = new AddQuote();
+            quoteForm.ShowDialog();
         }
     }
 }
