@@ -110,10 +110,12 @@ namespace MegaDesk_Dias.Resources
             var writer = new StreamWriter("data.bat", append: true);
             writer.WriteLine(quote);
             writer.Close();
+            MessageBox.Show("Quote Saved!");
         }
 
         private void sendQuote()
         {
+            
             int width = int.Parse(widthInput.Text);
             int depth = int.Parse(depthInput.Text);
             int drawers = (int)drawerInput.Value;
@@ -121,7 +123,9 @@ namespace MegaDesk_Dias.Resources
             Desk desk = new Desk(width, depth, drawers, material);
             RushOrderType orderType = (RushOrderType)rushInput.SelectedIndex;
             var quote = new DeskQuote(desk, nameInput.Text, orderType);
-            saveQuoteOnFile(quote); 
+            saveQuoteOnFile(quote);
+            var displayQuote = new DisplayQuote(quote);
+            displayQuote.ShowDialog();
         }
 
         private void addQuoteBtn_Click(object sender, EventArgs e)

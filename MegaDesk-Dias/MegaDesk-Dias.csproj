@@ -62,6 +62,12 @@
     </Compile>
     <Compile Include="Resources\Desk.cs" />
     <Compile Include="Resources\DeskQuote.cs" />
+    <Compile Include="Resources\DisplayQuote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\DisplayQuote.Designer.cs">
+      <DependentUpon>DisplayQuote.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +83,9 @@
     </Compile>
     <EmbeddedResource Include="Resources\AddQuote.resx">
       <DependentUpon>AddQuote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DisplayQuote.resx">
+      <DependentUpon>DisplayQuote.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

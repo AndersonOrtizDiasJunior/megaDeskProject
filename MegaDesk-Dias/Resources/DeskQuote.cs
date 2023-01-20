@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_Dias.Resources
 {
-    internal class DeskQuote
+    public class DeskQuote
     {
         public Desk desk;
         public string customerName;
@@ -131,7 +131,7 @@ namespace MegaDesk_Dias.Resources
             }
         }
     }
-    enum RushOrderType
+    public enum RushOrderType
     {
         none,
         threeDay,

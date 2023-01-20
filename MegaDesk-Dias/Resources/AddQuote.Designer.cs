@@ -49,9 +49,9 @@
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(63, 9);
+            this.nameInput.Location = new System.Drawing.Point(74, 9);
             this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(257, 20);
+            this.nameInput.Size = new System.Drawing.Size(246, 20);
             this.nameInput.TabIndex = 0;
             // 
             // widthInput

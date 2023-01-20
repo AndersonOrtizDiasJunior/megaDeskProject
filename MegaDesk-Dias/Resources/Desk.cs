@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_Dias.Resources
 {
-    internal class Desk
+    public class Desk
     {
-        private int width, depth;
+        public int width, depth;
         public int numberOfDrawers;
         public DesktopMaterial surfaceMaterial;
         public int surfaceArea
@@ -40,7 +40,7 @@ namespace MegaDesk_Dias.Resources
         }
     }
 
-    enum DesktopMaterial
+    public enum DesktopMaterial
     {
         oak,
         laminate,
