@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exitBtn = new System.Windows.Forms.Button();
             this.searchBtn = new System.Windows.Forms.Button();
             this.quoteBtn = new System.Windows.Forms.Button();
             this.viewBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MegaDesk_Dias.Properties.Resources.mega_desk_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 184);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // exitBtn
             // 
@@ -64,6 +54,7 @@
             this.searchBtn.TabIndex = 3;
             this.searchBtn.Text = "Search Quotes";
             this.searchBtn.UseVisualStyleBackColor = true;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // quoteBtn
             // 
@@ -83,6 +74,17 @@
             this.viewBtn.TabIndex = 2;
             this.viewBtn.Text = "View Quotes";
             this.viewBtn.UseVisualStyleBackColor = true;
+            this.viewBtn.Click += new System.EventHandler(this.viewBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MegaDesk_Dias.Properties.Resources.mega_desk_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(149, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 184);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // menu
             // 

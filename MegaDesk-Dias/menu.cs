@@ -33,5 +33,17 @@ namespace MegaDesk_Dias
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void viewBtn_Click(object sender, EventArgs e)
+        {
+            var viewQuotes = new ViewAllQuotes();
+            viewQuotes.ShowDialog();
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            var searchQuotes = new SearchQuotes();
+            searchQuotes.ShowDialog();
+        }
     }
 }

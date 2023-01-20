@@ -11,3 +11,5 @@ C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.
 C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk-Dias.pdb
 C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk_Dias.Resources.AddQuote.resources
 C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk_Dias.Resources.DisplayQuote.resources
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk_Dias.Resources.ViewAllQuotes.resources
+C:\Users\Anderson\Desktop\megaDeskProject\MegaDesk-Dias\obj\Debug\MegaDesk_Dias.Resources.SearchQuotes.resources
