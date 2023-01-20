@@ -28,5 +28,10 @@ namespace MegaDesk_Dias
             var quoteForm = new AddQuote();
             quoteForm.ShowDialog();
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
