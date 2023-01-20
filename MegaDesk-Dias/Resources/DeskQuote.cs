@@ -11,6 +11,7 @@ namespace MegaDesk_Dias.Resources
         public Desk desk;
         public string customerName;
         public RushOrderType rushOrder;
+        public DateTime date;
         public float quote
         {
             get
@@ -19,22 +20,39 @@ namespace MegaDesk_Dias.Resources
             }
         }
   
-
-
-        private float calculateQuote()
+        public DeskQuote(Desk desk, string customerName, RushOrderType rushOrder)
         {
-            float quote = areaPrice();
+            this.desk = desk;
+            this.customerName = customerName;
+            this.rushOrder = rushOrder;
+            this.date = DateTime.Now;
+        }
+        public DeskQuote(string str)
+        {
+            var deskQuoteStr = str.Split(',');
+            this.desk = new Desk($"{deskQuoteStr[0]},{deskQuoteStr[1]},{deskQuoteStr[2]},{deskQuoteStr[3]}");
+            this.customerName = deskQuoteStr[4];
+            this.rushOrder = (RushOrderType)int.Parse(deskQuoteStr[5]);
+            this.date = DateTime.Parse(deskQuoteStr[6]);
+        }
+        public override string ToString()
+        {
+            return $"{desk},{customerName},{(int)rushOrder},{date}";
+        }
+        private int calculateQuote()
+        {
+            int quote = areaPrice();
             quote += drawerPrice();
             quote += surfaceMaterialPrice();
             quote += rushPrice();
             return quote;
         }
-        private float drawerPrice()
+        private int drawerPrice()
         {
             return this.desk.numberOfDrawers * 50;
         }
 
-        private float areaPrice()
+        private int areaPrice()
         {
             if (this.desk.surfaceArea > 1000)
             {
