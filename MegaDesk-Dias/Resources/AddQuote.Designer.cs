@@ -191,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.widthInput);
             this.Controls.Add(this.nameInput);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddQuote";

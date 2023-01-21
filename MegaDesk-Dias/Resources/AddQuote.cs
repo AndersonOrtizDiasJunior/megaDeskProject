@@ -125,9 +125,20 @@ namespace MegaDesk_Dias.Resources
             var quote = new DeskQuote(desk, nameInput.Text, orderType);
             saveQuoteOnFile(quote);
             var displayQuote = new DisplayQuote(quote);
+            clearForms();
             displayQuote.ShowDialog();
         }
 
+        private void clearForms()
+        {
+            nameInput.Text = string.Empty;
+            widthInput.Text = string.Empty;
+            depthInput.Text = string.Empty;
+            drawerInput.Value = 0;
+            materialInput.SelectedIndex = -1;
+            rushInput.SelectedIndex = -1;
+
+        }
         private void addQuoteBtn_Click(object sender, EventArgs e)
         {
             validate();

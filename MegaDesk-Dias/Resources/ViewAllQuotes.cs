@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.LinkLabel;
 
 namespace MegaDesk_Dias.Resources
 {
@@ -21,31 +22,32 @@ namespace MegaDesk_Dias.Resources
         
         private DeskQuote[] loadQuotes()
         {
-            
-            StreamReader reader = new StreamReader("data.bat");
-            var lines = reader.ReadToEnd().Split('\n');
-            DeskQuote[] deskQuotes = new DeskQuote[lines.Length];
-            for (int i = 0;i < lines.Length; i++)
-            {
-                deskQuotes[i] = new DeskQuote(lines[i]);
-            }
-            reader.Close();
-            return deskQuotes;
+            try{
+                StreamReader reader = new StreamReader("data.bat");
+                var lines = reader.ReadToEnd().Split('\n');
+                DeskQuote[] deskQuotes = new DeskQuote[lines.Length];
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    deskQuotes[i] = new DeskQuote(lines[i]);
+                }
+                reader.Close();
+                return deskQuotes;
+            } catch { return new DeskQuote[0]; }
         }
 
         private void fillTable()
         {
             var quotes = loadQuotes();
             foreach (var quote in quotes)
-            {
+            {   
                 table.Rows.Add(quote.date.ToString(),
                     quote.customerName,
                     quote.desk.width.ToString(),
                     quote.desk.depth.ToString(),
                     quote.desk.surfaceMaterial.ToString(),
                     quote.desk.numberOfDrawers.ToString(),
-                    quote.rushOrder.ToString(),
-                    quote.quote.ToString());
+                    quote.rushName(),
+                    $"${quote.quote},00");
             }
         }
     }

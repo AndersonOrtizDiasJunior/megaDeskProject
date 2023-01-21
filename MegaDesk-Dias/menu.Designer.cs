@@ -96,6 +96,7 @@
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "menu";

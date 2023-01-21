@@ -20,16 +20,19 @@ namespace MegaDesk_Dias.Resources
 
         private DeskQuote[] loadQuotes()
         {
-
-            StreamReader reader = new StreamReader("data.bat");
-            var lines = reader.ReadToEnd().Split('\n');
-            DeskQuote[] deskQuotes = new DeskQuote[lines.Length];
-            for (int i = 0; i < lines.Length; i++)
+            try
             {
-                deskQuotes[i] = new DeskQuote(lines[i]);
+                StreamReader reader = new StreamReader("data.bat");
+                var lines = reader.ReadToEnd().Split('\n');
+                DeskQuote[] deskQuotes = new DeskQuote[lines.Length];
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    deskQuotes[i] = new DeskQuote(lines[i]);
+                }
+                reader.Close();
+                return deskQuotes;
             }
-            reader.Close();
-            return deskQuotes;
+            catch { return new DeskQuote[0]; }
         }
 
         private void fillTable(string material)
@@ -46,8 +49,8 @@ namespace MegaDesk_Dias.Resources
                     quote.desk.depth.ToString(),
                     quote.desk.surfaceMaterial.ToString(),
                     quote.desk.numberOfDrawers.ToString(),
-                    quote.rushOrder.ToString(),
-                    quote.quote.ToString());
+                    quote.rushName(),
+                    $"${quote.quote},00");
                 }
             }
         }

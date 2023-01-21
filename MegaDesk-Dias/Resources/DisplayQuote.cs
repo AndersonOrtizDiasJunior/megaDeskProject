@@ -33,6 +33,7 @@ namespace MegaDesk_Dias.Resources
             materialInput.Text = quote.desk.surfaceMaterial.ToString();
             rushInput.Text = quote.rushOrder.ToString();
             dateInput.Text = quote.date.ToString();
+            quoteInput.Text = $"${quote.quote},00";
         }
     }
 }

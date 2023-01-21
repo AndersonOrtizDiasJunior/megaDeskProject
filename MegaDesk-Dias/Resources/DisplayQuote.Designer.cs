@@ -42,6 +42,8 @@
             this.materialInput = new System.Windows.Forms.TextBox();
             this.drawerInput = new System.Windows.Forms.TextBox();
             this.dateInput = new System.Windows.Forms.TextBox();
+            this.quoteInput = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label8
@@ -157,11 +159,29 @@
             this.dateInput.Size = new System.Drawing.Size(156, 20);
             this.dateInput.TabIndex = 30;
             // 
+            // quoteInput
+            // 
+            this.quoteInput.Enabled = false;
+            this.quoteInput.Location = new System.Drawing.Point(51, 296);
+            this.quoteInput.Name = "quoteInput";
+            this.quoteInput.Size = new System.Drawing.Size(156, 20);
+            this.quoteInput.TabIndex = 32;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(11, 299);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 20);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Quote";
+            // 
             // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 295);
+            this.ClientSize = new System.Drawing.Size(326, 328);
+            this.Controls.Add(this.quoteInput);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dateInput);
             this.Controls.Add(this.drawerInput);
             this.Controls.Add(this.materialInput);
@@ -176,6 +196,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.widthInput);
             this.Controls.Add(this.nameInput);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "DisplayQuote";
             this.Text = "DisplayQuote";
             this.ResumeLayout(false);
@@ -199,5 +222,7 @@
         private System.Windows.Forms.TextBox materialInput;
         private System.Windows.Forms.TextBox drawerInput;
         private System.Windows.Forms.TextBox dateInput;
+        private System.Windows.Forms.TextBox quoteInput;
+        private System.Windows.Forms.Label label4;
     }
 }

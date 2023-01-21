@@ -39,6 +39,30 @@ namespace MegaDesk_Dias.Resources
         {
             return $"{desk},{customerName},{(int)rushOrder},{date}";
         }
+
+        public string rushName()
+        {
+            string name;
+            switch (rushOrder)
+            {
+                case RushOrderType.threeDay : 
+                    name = "3 days";
+                break;
+
+                case RushOrderType.fiveDay:
+                    name = "5 days";
+                break;
+
+                case RushOrderType.sevenDay:
+                    name = "7 days";
+                break;
+
+                default:
+                    name = "14 days (default)";
+                break;
+            }
+            return name;
+        }
         private int calculateQuote()
         {
             int quote = areaPrice();

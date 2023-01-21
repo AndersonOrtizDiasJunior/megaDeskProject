@@ -71,7 +71,7 @@
             this.FullName.HeaderText = "Full Name";
             this.FullName.Name = "FullName";
             this.FullName.ReadOnly = true;
-            this.FullName.Width = 79;
+            this.FullName.Width = 73;
             // 
             // width
             // 
@@ -117,6 +117,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 496);
             this.Controls.Add(this.table);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewAllQuotes";
