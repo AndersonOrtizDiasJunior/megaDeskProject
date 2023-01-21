@@ -22,10 +22,10 @@ namespace MegaDesk_Dias.Resources
         {
             try
             {
-                StreamReader reader = new StreamReader("data.bat");
+                StreamReader reader = new StreamReader("data.bin");
                 var lines = reader.ReadToEnd().Split('\n');
-                DeskQuote[] deskQuotes = new DeskQuote[lines.Length];
-                for (int i = 0; i < lines.Length; i++)
+                DeskQuote[] deskQuotes = new DeskQuote[lines.Length - 1];
+                for (int i = 0; i < lines.Length-1; i++)
                 {
                     deskQuotes[i] = new DeskQuote(lines[i]);
                 }

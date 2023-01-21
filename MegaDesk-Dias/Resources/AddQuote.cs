@@ -107,7 +107,7 @@ namespace MegaDesk_Dias.Resources
 
         private void saveQuoteOnFile(DeskQuote quote)
         {
-            var writer = new StreamWriter("data.bat", append: true);
+            var writer = new StreamWriter("data.bin", append: true);
             writer.WriteLine(quote);
             writer.Close();
             MessageBox.Show("Quote Saved!");
