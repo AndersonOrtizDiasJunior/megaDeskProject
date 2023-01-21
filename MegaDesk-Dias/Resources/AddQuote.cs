@@ -87,7 +87,7 @@ namespace MegaDesk_Dias.Resources
             }
             else if (rushInput.SelectedItem is null)
             {
-                MessageBox.Show("Please, select the production time material!");
+                MessageBox.Show("Please, select the production time!");
                 rushInput.Focus();
             } else
             {

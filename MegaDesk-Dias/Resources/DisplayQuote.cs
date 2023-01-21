@@ -31,7 +31,7 @@ namespace MegaDesk_Dias.Resources
             depthInput.Text = quote.desk.depth.ToString();
             drawerInput.Text = quote.desk.numberOfDrawers.ToString();
             materialInput.Text = quote.desk.surfaceMaterial.ToString();
-            rushInput.Text = quote.rushOrder.ToString();
+            rushInput.Text = quote.rushName();
             dateInput.Text = quote.date.ToString();
             quoteInput.Text = $"${quote.quote},00";
         }
